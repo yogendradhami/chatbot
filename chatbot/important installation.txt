@@ -1,0 +1,9 @@
+1. install chatbot: "pip install chatterbot"
+
+2. install chatterbot--corpus: pip install chatterbot-corpus
+
+3. install pyymal: pip install pyymal
+
+4. install language: python -m spacy download en
+
+5. install spacy : pip install spacy

@@ -1,0 +1,3 @@
+[console_scripts]
+spacy-model = spacy_model_manager.cli:spacy_model
+

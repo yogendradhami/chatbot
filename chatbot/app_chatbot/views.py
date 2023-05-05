@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from chatterbot import  ChatBot
+from chatterbot.trainers import ListTrainer
 # Create your views here.
 
 def Index(request):
@@ -8,5 +10,6 @@ def Index(request):
 def Specific(request):
     return render(request, 'index.html')
 
-# def Article(request,article_id):
-#     return HttpResponse(article_id)
+def getResponse(request):
+    userMessage=request.GET.get('userMessage')
+    return HttpResponse(userMessage)
